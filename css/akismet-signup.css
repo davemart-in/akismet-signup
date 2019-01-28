@@ -1,0 +1,90 @@
+/* ---------------------------------------- */
+/* Reset */
+/* ---------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #D5DCE1;
+  color: #273B4A;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+/* ---------------------------------------- */
+/* Custom A/B Signup code */
+/* ---------------------------------------- */
+.ab-signup {
+  margin: 48px auto;
+  max-width: 768px;
+  text-align: left;
+}
+/* ---------------------------------------- */
+/* Headers */
+/* ---------------------------------------- */
+.ab-signup_header h1 {
+  font-family: Merriweather, Georgia, serif;
+  font-weight: 400;
+  margin: -2px 0 4px;
+}
+.ab-signup_header h2 {
+  color: #748494;
+  font-weight: 300;
+}
+.ab-signup_header h2 strong {
+  color: #273B4A;
+  font-weight: 600;
+}
+/* ---------------------------------------- */
+/* Container */
+/* ---------------------------------------- */
+.ab-signup_container {
+  flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+}
+/* ---------------------------------------- */
+/* Left Form */
+/* ---------------------------------------- */
+.ab-signup_left {
+  background: #FFF;
+  padding: 36px;
+  width: 50%;
+}
+/* ---------------------------------------- */
+/* Right */
+/* ---------------------------------------- */
+.ab-signup_right {
+  background: #F1F3F5;
+  padding: 36px;
+  width: 50%;
+}
+/* ---------------------------------------- */
+/* Responsive */
+/* ---------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .ab-signup_header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  .ab-signup_header h1 {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .ab-signup_header h2 {
+    text-align: center;
+  }
+  .ab-signup_container {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .ab-signup_left {
+    display: block;
+    width: 100%;
+  }
+  .ab-signup_right {
+    width: 100%;
+  }
+}
