@@ -7,13 +7,18 @@
 }
 body {
   background: #D5DCE1;
-  color: #273B4A;
+  color: #405261;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   text-align: center;
 }
 /* ---------------------------------------- */
 /* Extend seed */
 /* ---------------------------------------- */
+/* Alert */
+.c-alert p {
+  margin-bottom: 0;
+}
 /* Buttons */
 .c-button.is-selected,
 .c-button.is-selected:hover {
@@ -26,11 +31,20 @@ body {
   padding: 0 8px;
 }
 /* Input */
+.c-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B7C2CC;
+}
+.c-input::-moz-placeholder { /* Firefox 19+ */
+  color: #B7C2CC;
+}
+.c-input:-ms-input-placeholder { /* IE 10+ */
+  color: #B7C2CC;
+}
+.c-input:-moz-placeholder { /* Firefox 18- */
+  color: #B7C2CC;
+}
 .c-input--cc {
   min-width: 275px;
-}
-.c-dropdown--expiration {
-  min-width: 50%;
 }
 .c-input--lg {
   height: 48px;
@@ -42,7 +56,7 @@ body {
 }
 .c-dropdown select {
   background: none;
-  border: 1px solid #CCC;
+  border: 1px solid #d5d5d5;
   border-radius: 0 2px 2px 0;
   height: 48px;
   -moz-appearance: none;
@@ -59,6 +73,18 @@ body {
   top: 13px;
   z-index: 2;
 }
+.c-dropdown.c-dropdown--exp-mo {
+  min-width: 50%;
+}
+.c-dropdown.c-dropdown--exp-mo select {
+  border-radius: 3px 0 0 3px;
+}
+.c-dropdown.c-dropdown--exp-yr {
+  min-width: 50%;
+}
+.c-dropdown.c-dropdown--exp-yr select {
+  border-radius: 0 3px 3px 0;
+}
 /* ---------------------------------------- */
 /* Custom A/B Signup code */
 /* ---------------------------------------- */
@@ -70,16 +96,17 @@ body {
 /* ---------------------------------------- */
 /* Headers */
 /* ---------------------------------------- */
-.ab-signup_header h1 {
+.ab-signup h1 {
+  color: #273B4A;
   font-family: Merriweather, Georgia, serif;
   font-weight: 400;
   margin: -2px 0 4px;
 }
-.ab-signup_header h2 {
+.ab-signup h2 {
   color: #748494;
   font-weight: 300;
 }
-.ab-signup_header h2 strong {
+.ab-signup h2 strong {
   color: #273B4A;
   font-weight: 600;
 }
@@ -90,6 +117,15 @@ body {
   align-items: stretch;
   flex-direction: row-reverse;
     -webkit-flex-direction: row-reverse;
+  position: relative;
+}
+.ab-signup_container .pesky-spam {
+  height: 50px;
+  left: -208px;
+  position: absolute;
+  top: 14px;
+  width: 233px;
+  z-index: 2;
 }
 /* ---------------------------------------- */
 /* Left Form */
@@ -105,13 +141,24 @@ body {
 .ab-signup_right {
   background: #F1F3F5;
   flex: 1;
-  padding: 36px 0 36px 36px;
+  padding: 36px;
+  text-align: center;
   width: 42%;
+}
+.ab-signup_right h1 {
+  color: #5E8E13;
+  font-size: 24px;
+  margin: 54px 0 16px;
+  text-align: center;
+}
+.ab-signup_right p {
+  font-size: 14px;
 }
 /* ---------------------------------------- */
 /* Submit */
 /* ---------------------------------------- */
 .ab-signup_submit {
+  font-weight: 300;
   width: 100%;
 }
 /* ---------------------------------------- */
@@ -136,11 +183,29 @@ body {
     margin: 0 auto;
     width: 90%;
   }
+  .ab-signup_container .pesky-spam {
+    display: none;
+  }
   .ab-signup_left {
     display: block;
     width: 100%;
   }
+  .ab-signup_left .o-control-group {
+    display: block;
+    margin-bottom: 0 !important;
+  }
+  .ab-signup_left .o-control-group > * {
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 16px;
+  }
+  .ab-signup_left .o-control-group select {
+    border-radius: 3px;
+  }
   .ab-signup_right {
     width: 100%;
+  }
+  .ab-signup_submit {
+    font-size: 16px;
   }
 }
