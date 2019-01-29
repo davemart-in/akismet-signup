@@ -12,6 +12,54 @@ body {
   text-align: center;
 }
 /* ---------------------------------------- */
+/* Extend seed */
+/* ---------------------------------------- */
+/* Buttons */
+.c-button.is-selected,
+.c-button.is-selected:hover {
+    background-color: #E5E9EC;
+}
+.c-button--sm {
+  font-size: .875rem;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 8px;
+}
+/* Input */
+.c-input--cc {
+  min-width: 275px;
+}
+.c-dropdown--expiration {
+  min-width: 50%;
+}
+.c-input--lg {
+  height: 48px;
+  line-height: 46px;
+}
+/* Dropdown */
+.c-dropdown--country {
+  min-width: 186.5px;
+}
+.c-dropdown select {
+  background: none;
+  border: 1px solid #CCC;
+  border-radius: 0 2px 2px 0;
+  height: 48px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 0 20px 0 8px;
+  width: 100%;
+}
+.c-dropdown span {
+  color: #A5ACBD;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 13px;
+  z-index: 2;
+}
+/* ---------------------------------------- */
 /* Custom A/B Signup code */
 /* ---------------------------------------- */
 .ab-signup {
@@ -39,8 +87,9 @@ body {
 /* Container */
 /* ---------------------------------------- */
 .ab-signup_container {
+  align-items: stretch;
   flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    -webkit-flex-direction: row-reverse;
 }
 /* ---------------------------------------- */
 /* Left Form */
@@ -48,15 +97,22 @@ body {
 .ab-signup_left {
   background: #FFF;
   padding: 36px;
-  width: 50%;
+  width: 58%;
 }
 /* ---------------------------------------- */
 /* Right */
 /* ---------------------------------------- */
 .ab-signup_right {
   background: #F1F3F5;
-  padding: 36px;
-  width: 50%;
+  flex: 1;
+  padding: 36px 0 36px 36px;
+  width: 42%;
+}
+/* ---------------------------------------- */
+/* Submit */
+/* ---------------------------------------- */
+.ab-signup_submit {
+  width: 100%;
 }
 /* ---------------------------------------- */
 /* Responsive */
