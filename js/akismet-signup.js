@@ -60,8 +60,10 @@ AKSMT.Signup = function () {
           sites = $('.ab-signup_sites'),
           pwyw = $('.ab-signup_pwyw'),
           pay = $('.ab-signup_pay'),
+          payment = $('.ab-signup_payment'),
           personal = $('.ab-signup_personal'),
-          features = $('.ab-signup_features');
+          features = $('.ab-signup_features'),
+          unlimited = $('.ab-signup_unlimited');
       // Update selected option
       useButtons.removeClass('is-selected');
       $this.addClass('is-selected');
@@ -73,6 +75,8 @@ AKSMT.Signup = function () {
         pwyw.hide();
         // Show pay selector
         pay.show();
+        // Show payment fields
+        payment.slideDown();
         // Hide personal section
         personal.slideUp();
         // Save to local cache
@@ -86,6 +90,8 @@ AKSMT.Signup = function () {
         pwyw.show();
         // Hide pay selector
         pay.hide();
+        // Hide unlimited feature copy
+        unlimited.hide();
         // Show personal section
         personal.slideDown();
         // Save to local cache
@@ -153,10 +159,10 @@ AKSMT.Signup = function () {
       // Make changes to DOM if this is free plan
       if (amt === 'zero') {
         // Hide payment fields
-        payment.hide();
+        payment.slideUp();
       } else {
         // Show payment fields
-        payment.show();
+        payment.slideDown();
       }
       // Save to local cache
       cache.plan = amt;
