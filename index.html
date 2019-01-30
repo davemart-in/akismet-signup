@@ -17,22 +17,77 @@
 			"pricing": {
 				"commercial": {
 					"annually": {
-						"one": "59",
-						"three": "177",
-						"five": "295",
-						"ten": "550"
+						"one": {
+							"duration": "2",
+							"plan": "10006018:1",
+							"price": "59",
+							"step": "creditcard-payment"
+						},
+						"three": {
+							"duration": "2",
+							"plan": "10006018:3",
+							"price": "177",
+							"step": "creditcard-payment"
+						},
+						"five": {
+							"duration": "2",
+							"plan": "10006018:5",
+							"price": "295",
+							"step": "creditcard-payment"
+						},
+						"ten": {
+							"duration": "2",
+							"plan": "10075510:1",
+							"price": "550",
+							"step": "creditcard-payment"
+						}
 					},
 					"monthly": {
-						"one": "5",
-						"three": "15",
-						"five": "25",
-						"ten": "50"
+						"one": {
+							"duration": "1",
+							"plan": "10005787:1",
+							"price": "5",
+							"step": "creditcard-payment"
+						},
+						"three": {
+							"duration": "1",
+							"plan": "10005787:3",
+							"price": "15",
+							"step": "creditcard-payment"
+						},
+						"five": {
+							"duration": "1",
+							"plan": "10005787:5",
+							"price": "25",
+							"step": "creditcard-payment"
+						},
+						"ten": {
+							"duration": "1",
+							"plan": "10075508:1",
+							"price": "50",
+							"step": "creditcard-payment"
+						}
 					}
 				},
 				"personal": {
-					"thirtysix": "36",
-					"eighteen": "18",
-					"zero": "0"
+					"thirtysix": {
+						"duration": "1",
+						"plan": "10024300:36",
+						"price": "36",
+						"step": "creditcard-payment"
+					},
+					"eighteen": {
+						"duration": "1",
+						"plan": "10024300:18",
+						"price": "18",
+						"step": "creditcard-payment"
+					},
+					"zero": {
+						"duration": "1",
+						"plan": "10005759:0",
+						"price": "0",
+						"step": "free"
+					}
 				}
 			}
 		}
@@ -93,17 +148,17 @@
 			<!-- LEFT COLUMN -->
 			<div class="o-flexy__item ab-signup_left">
 				<form action="" method="post" data-paygate-config="{&quot;environment&quot;:&quot;production&quot;,&quot;publicKey&quot;:&quot;79e1817a3a737f73c020e2a6a50e78496c4883139d8e2ae3e7ee1ca86df6c134&quot;,&quot;processor&quot;:&quot;stripe&quot;}">
-					<input type="hidden" id="_nonce" name="_nonce" value="75c0c6115b">
+					<input type="hidden" id="_nonce" name="_nonce" value="">
 					<input type="hidden" name="_wp_http_referer" value="/signup/">
-					<input type="hidden" id="wpcom_user_id" value="151830178">
+					<input type="hidden" id="wpcom_user_id" value="">
 					<input type="hidden" name="mode" value="">
-	        <input type="hidden" name="formOfPayment" value="CreditCard">
-	        <input type="hidden" name="signupflow" value="signup">
-	        <input type="hidden" id="step" name="step" value="creditcard-payment">
-	        <input type="hidden" id="plan_qty" name="plan_qty" value="10006018:1">
-	        <input type="hidden" id="duration" name="duration" value="2">
-	        <input type="hidden" id="inSessionID" name="inSessionID" value="">
-	        <input type="hidden" id="client_no" name="client_no" value="">
+					<input type="hidden" name="formOfPayment" value="CreditCard">
+					<input type="hidden" name="signupflow" value="signup">
+					<input type="hidden" id="step" name="step" value="creditcard-payment">
+					<input type="hidden" id="plan_qty" name="plan_qty" value="10006018:1">
+					<input type="hidden" id="duration" name="duration" value="2">
+					<input type="hidden" id="inSessionID" name="inSessionID" value="">
+					<input type="hidden" id="client_no" name="client_no" value="">
 
 					<div class="o-control-group u-mrg-b-6" role="group">
 						
