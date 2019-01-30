@@ -153,6 +153,7 @@ body {
 }
 .ab-signup_right p {
   font-size: 14px;
+  margin-bottom: 12px;
 }
 /* ---------------------------------------- */
 /* Submit */
@@ -160,6 +161,16 @@ body {
 .ab-signup_submit {
   font-weight: 300;
   width: 100%;
+}
+/* ---------------------------------------- */
+/* TOS */
+/* ---------------------------------------- */
+.ab-signup_terms {
+  color: #93A1B0;
+  display: block;
+  font-style: italic;
+  margin-top: 16px;
+  text-align: center;
 }
 /* ---------------------------------------- */
 /* Responsive */
